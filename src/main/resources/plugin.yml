@@ -1,0 +1,26 @@
+name: CampRelay
+version: '1.0'
+main: com.novusmc.camprelay.Main
+api-version: '1.21'
+author: NovusMC
+description: 'Systeme de relais logistiques et de survie avance - Camp Relay pour NovusMC SMP.'
+
+commands:
+  cr:
+    description: Commande principale du plugin CampRelay
+    aliases: [camprelay]
+    usage: "/<command> [give|tp|storage|log|reload|help]"
+
+permissions:
+  camprelay.use:
+    description: Acces de base au plugin CampRelay (GUI, respawn)
+    default: true
+  camprelay.admin:
+    description: Acces admin (give, reload)
+    default: op
+  camprelay.tp:
+    description: Acces au reseau de teleportation entre Camp Relay
+    default: true
+  camprelay.storage:
+    description: Acces au stockage d'urgence du Camp Relay
+    default: true
